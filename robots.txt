@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeremytzq.github.io/jeremytzq-site-preview/sitemap.xml
