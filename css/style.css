@@ -520,3 +520,11 @@ button, input, select, textarea { font-family: inherit; }
   .portrait-copy { order: -1; }
   .consult-photo { max-width: 100%; }
 }
+
+.stats-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 980px) {
+  .stats-grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .stats-grid-3 { grid-template-columns: 1fr; }
+}
