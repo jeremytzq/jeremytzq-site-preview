@@ -56,7 +56,7 @@
   }
   </script>
 </head>
-<body>
+<body class="lux">
 
 <!-- NAV -->
 <nav class="nav" id="nav">
@@ -66,6 +66,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#strengths">Strengths</a></li>
+      <li><a href="#projects">New Projects</a></li>
       <li><a href="#also">Also</a></li>
       <li><a href="#process">How I Work</a></li>
       <li><a href="#about">About</a></li>
@@ -79,6 +80,7 @@
 </nav>
 <div class="nav-mobile" id="mobile-menu">
   <a href="#strengths">Strengths</a>
+  <a href="#projects">New Projects</a>
   <a href="#also">Also</a>
   <a href="#process">How I Work</a>
   <a href="#about">About</a>
@@ -87,7 +89,7 @@
 </div>
 
 <!-- HERO -->
-<section class="hero" id="top">
+<section class="hero" id="top"><div class="lux-grain" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div>
       <div class="hero-eyebrow reveal">PropNex Realty · CEA R069005Z · Singapore</div>
@@ -108,7 +110,7 @@
         <span><img src="icons/check-FFFFFF.png" alt=""> Direct WhatsApp access</span>
       </div>
     </div>
-    <div class="hero-photo reveal d2">
+    <div class="hero-photo reveal d2" data-parallax>
       <div class="hero-photo-frame">
         <picture>
           <source srcset="assets/jeremy-hero.webp" type="image/webp">
@@ -202,6 +204,22 @@
         </ul>
       </article>
     </div>
+  </div>
+</section>
+
+
+<!-- NEW PROJECTS -->
+<section class="section section-navy" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal">New Projects</span>
+      <h2 class="h2 reveal d1">Launches to watch.</h2>
+      <p class="lead reveal d2">ECs first — then OCR private launches relevant to HDB upgraders. Register interest and I’ll walk you through eligibility, numbers and timing.</p>
+    </div>
+    <div class="projects-grid" id="projects-grid" aria-live="polite">
+      <!-- filled by js/projects-data.js + main.js -->
+    </div>
+    <p class="projects-note reveal" id="projects-note"></p>
   </div>
 </section>
 
@@ -310,11 +328,11 @@
     </div>
     <div class="stats-grid stats-grid-3">
       <div class="stat-card reveal">
-        <div class="stat-num">3</div>
+        <div class="stat-num" data-count="3" data-suffix="">3</div>
         <div class="stat-lbl">Years in property · since 2023</div>
       </div>
       <div class="stat-card reveal d1">
-        <div class="stat-num">48+</div>
+        <div class="stat-num" data-count="48" data-suffix="+">48+</div>
         <div class="stat-lbl">Deals closed in 3 years</div>
       </div>
       <div class="stat-card reveal d2">
@@ -488,6 +506,7 @@
         <h4>Explore</h4>
         <div class="footer-links">
           <a href="#strengths">Strengths</a>
+          <a href="#projects">New Projects</a>
           <a href="#also">Also</a>
           <a href="#process">How I Work</a>
           <a href="#about">About</a>
@@ -523,6 +542,7 @@
   <img src="icons/whatsapp-FFFFFF.png" alt="">
 </a>
 
+<script src="js/projects-data.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
